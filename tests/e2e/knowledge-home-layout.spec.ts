@@ -54,7 +54,7 @@ for (const viewport of knowledgeMapViewports) {
     ).toHaveCount(0)
     await expect(
       page
-        .getByRole('navigation', { name: 'My Geo 主导航' })
+        .getByRole('navigation', { name: 'Scio Geo 主导航' })
         .getByRole('link', { name: '知识问答' }),
     ).toHaveCount(0)
 
@@ -138,7 +138,7 @@ for (const viewport of knowledgeMapViewports) {
 
     if (viewport.safeArea) {
       await page
-        .getByRole('navigation', { name: 'My Geo 主导航' })
+        .getByRole('navigation', { name: 'Scio Geo 主导航' })
         .getByRole('link', { name: '探索地球', exact: true })
         .click()
       const exploreShell = page.locator('.explore-shell')

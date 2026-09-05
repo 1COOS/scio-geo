@@ -5,7 +5,7 @@ import { describe, expect, it } from 'vitest'
 
 import { generateMountainGeometryCatalogFromArchive } from './generate-mountain-geometries'
 
-const archivePath = process.env.MY_GEO_MOUNTAIN_ARCHIVE
+const archivePath = process.env.SCIO_GEO_MOUNTAIN_ARCHIVE
 
 describe.skipIf(!archivePath)(
   'mountain geometry generator reproducibility',

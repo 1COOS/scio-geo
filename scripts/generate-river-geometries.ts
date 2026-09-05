@@ -54,7 +54,7 @@ const outputPath = path.join(
   projectRoot,
   'src/data/generated/river-geometries.json',
 )
-const archiveOverrideEnvironmentVariable = 'MY_GEO_RIVER_ARCHIVE'
+const archiveOverrideEnvironmentVariable = 'SCIO_GEO_RIVER_ARCHIVE'
 const earthRadiusKilometers = 6371.0088
 
 function toRadians(value: number) {
@@ -409,7 +409,7 @@ if (import.meta.main) {
   // Keep a dedicated temporary directory available for future source adapters;
   // it is always removed and never becomes a runtime dependency.
   const temporaryDirectory = await mkdtemp(
-    path.join(tmpdir(), 'my-geo-rivers-'),
+    path.join(tmpdir(), 'scio-geo-rivers-'),
   )
   try {
     const geometries = await generateRiverGeometries()

@@ -1,6 +1,6 @@
 # Third-party geography data
 
-My Geo generates and ships local, offline-ready geography assets from fixed package versions. These sources are used during `bun run data:generate`; the application does not query them or any external API at runtime.
+Scio Geo generates and ships local, offline-ready geography assets from fixed package versions. These sources are used during `bun run data:generate`; the application does not query them or any external API at runtime.
 
 ## Country catalogue
 
@@ -11,7 +11,7 @@ My Geo generates and ships local, offline-ready geography assets from fixed pack
 
 The generated catalogue is a derivative database. It remains attributable to the source and is redistributed under the ODbL terms applicable to that database.
 
-My Geo adds repository-owned Chinese labels for capitals, subregions and the small number of language or currency codes that are not localized by the pinned JavaScript runtime. The pinned source omits a currency entry for the Federated States of Micronesia, so the generator applies an explicit local USD correction and validates it with the rest of the catalogue.
+Scio Geo adds repository-owned Chinese labels for capitals, subregions and the small number of language or currency codes that are not localized by the pinned JavaScript runtime. The pinned source omits a currency entry for the Federated States of Micronesia, so the generator applies an explicit local USD correction and validates it with the rest of the catalogue.
 
 ## Knowledge-card highlights
 
@@ -19,7 +19,7 @@ My Geo adds repository-owned Chinese labels for capitals, subregions and the sma
 - Three highlights for each of the 12 featured countries are repository-owned summaries reviewed against linked references from Encyclopaedia Britannica, UNESCO, the World Wildlife Fund and the U.S. National Park Service.
 - The generated `country-sources.json` registry records publisher, URL, version or access date, and license notes. Links are optional references only; all displayed content remains available offline.
 
-Reference sites retain their own copyright. My Geo stores short original Chinese summaries rather than copying source prose.
+Reference sites retain their own copyright. Scio Geo stores short original Chinese summaries rather than copying source prose.
 
 ## Country profile resources, people and economy
 
@@ -37,7 +37,7 @@ Reference sites retain their own copyright. My Geo stores short original Chinese
   Country-signature items are optional and come only from the reviewed local
   landmark catalogue or explicit country-specific editorial entries.
 
-My Geo commits normalized Chinese profile data and never queries the Factbook
+Scio Geo commits normalized Chinese profile data and never queries the Factbook
 at runtime. The Chinese summaries are repository-authored teaching text rather
 than copied source prose. Ethnic and religious categories follow the cited
 source's statistical vocabulary and should not be interpreted as legal,
@@ -50,17 +50,17 @@ kept; estimate years remain provenance metadata and are not displayed.
 - 地理定义复核：Encyclopaedia Britannica 的 latitude / longitude 参考条目，访问日期 2026-08-17。
 - Use: 经纬度判读、南北与东西半球、低中高纬度、赤道、南北回归线、南北极圈和地球五带的仓库内教学内容。
 
-My Geo 使用中国大陆初中地理常用的近似值：回归线约 23.5°，极圈约 66.5°；东西半球以 20°W 和 160°E 组成的经线圈划分。0°和180°经线用于判读东西经，不作为东西半球界线。所有说明均为仓库原创总结，没有复制教材正文；参考链接不构成运行时依赖。
+Scio Geo 使用中国大陆初中地理常用的近似值：回归线约 23.5°，极圈约 66.5°；东西半球以 20°W 和 160°E 组成的经线圈划分。0°和180°经线用于判读东西经，不作为东西半球界线。所有说明均为仓库原创总结，没有复制教材正文；参考链接不构成运行时依赖。
 
 ## 世界气候类型
 
 - Scientific source: Beck et al. (2023), _High-resolution (1 km) Köppen-Geiger maps for 1901–2099 based on constrained CMIP6 projections_, Figshare dataset version 2, <https://doi.org/10.6084/m9.figshare.21789074.v2>.
-- License: CC BY 4.0 according to the canonical Figshare metadata. The GloH2O project page contains an inconsistent legacy license link; My Geo therefore records and follows the Figshare dataset license.
+- License: CC BY 4.0 according to the canonical Figshare metadata. The GloH2O project page contains an inconsistent legacy license link; Scio Geo therefore records and follows the Figshare dataset license.
 - Pinned input: `koppen_geiger_tif.zip`, 130,618,411 bytes, official MD5 `7fc2f5a15d4f5fe0ce59c9a9b502aa09`; fixed member `1991_2020/koppen_geiger_0p1.tif` (3600×1800, 0.1°).
 - Accessed: 2026-08-18. The pinned version includes the January 2026 correction described by the publisher.
 - Use: 1991–2020 historical Köppen–Geiger land classification, converted at build time into two deterministic offline PNG rasters for balanced and low-quality rendering.
 
-Köppen–Geiger classes do not map one-to-one to the 13 climate names commonly used in mainland Chinese junior-secondary geography. My Geo applies a documented, repository-owned conversion and deliberately simplified teaching masks for the East Asian temperate monsoon region and major highland/mountain regions. The masks are original generalized outlines and do not copy a textbook map. They prioritize the curriculum concepts of broad distribution and controlling factors over scientific micro-boundaries.
+Köppen–Geiger classes do not map one-to-one to the 13 climate names commonly used in mainland Chinese junior-secondary geography. Scio Geo applies a documented, repository-owned conversion and deliberately simplified teaching masks for the East Asian temperate monsoon region and major highland/mountain regions. The masks are original generalized outlines and do not copy a textbook map. They prioritize the curriculum concepts of broad distribution and controlling factors over scientific micro-boundaries.
 
 The displayed climate layer is a teaching generalization, not a weather forecast, legal boundary, ecological survey or local planning dataset. Mountain valleys, coasts, islands and transition zones can differ at finer scales. The runtime is fully offline and never contacts Figshare, GloH2O or an educational API.
 
@@ -70,7 +70,7 @@ Border codes outside the 195-country catalogue are not treated as sovereign coun
 
 ## International organizations and cooperation mechanisms
 
-My Geo maintains a reviewed catalogue of 18 selective international identities:
+Scio Geo maintains a reviewed catalogue of 18 selective international identities:
 formal organizations, cooperation mechanisms and the five permanent United
 Nations Security Council seats. Near-universal global bodies such as the United
 Nations, WTO, WHO, IMF and World Bank are intentionally excluded so that the
@@ -95,7 +95,7 @@ elements rather than official emblems or trademarks.
 
 ## Reviewed overseas regions
 
-My Geo keeps the 195-country learning catalogue unchanged and maintains a
+Scio Geo keeps the 195-country learning catalogue unchanged and maintains a
 separate, repository-owned catalogue for nine representative overseas regions:
 Greenland, the Faroe Islands, Gibraltar, Bermuda, Puerto Rico, Guam, French
 Guiana, French Polynesia and New Caledonia. They are searchable learning
@@ -121,9 +121,9 @@ do not alter the underlying country boundary catalogue.
 - License: ISC for the World Atlas package; Natural Earth vector data is public domain
 - Use: 1:110m prototype country polygons and the non-country Antarctica landmass converted from TopoJSON to local GeoJSON.
 
-Natural Earth publishes Taiwan island as numeric feature `158`. My Geo incorporates that island polygon into China's numeric feature `156` when generating the local `CN` boundary; it does not create a separate country catalogue or knowledge-card entry. These boundaries are for internal product prototyping. Public release, especially in regulated jurisdictions, requires a separate map-compliance review.
+Natural Earth publishes Taiwan island as numeric feature `158`. Scio Geo incorporates that island polygon into China's numeric feature `156` when generating the local `CN` boundary; it does not create a separate country catalogue or knowledge-card entry. These boundaries are for internal product prototyping. Public release, especially in regulated jurisdictions, requires a separate map-compliance review.
 
-Natural Earth publishes Antarctica as numeric feature `010`. My Geo renders it as a non-interactive continental landmass on 2D and 3D maps; it is not added to the 195-country catalogue, search, country cards, challenges or learning progress.
+Natural Earth publishes Antarctica as numeric feature `010`. Scio Geo renders it as a non-interactive continental landmass on 2D and 3D maps; it is not added to the 195-country catalogue, search, country cards, challenges or learning progress.
 
 ## Capital coordinates
 
@@ -136,12 +136,12 @@ Natural Earth publishes Antarctica as numeric feature `010`. My Geo renders it a
 
 - Primary surface geometry: Natural Earth 5.1.0 1:10m geography marine polygons, public domain. The pinned archive SHA-256 is `a2d3395904c41e718e02c3ec5bc988712164c524c236fad32d95d282ca303b2a`.
 - Build process: `data:generate` downloads or accepts a local copy of the pinned archive, verifies its version and SHA-256, resolves 45 catalogue objects by repository-reviewed `ne_id`, combines the north and south records for the Pacific and Atlantic oceans, and writes deterministic high and low-detail JSON. `data:validate` never accesses the network.
-- Reviewed geometry supplements: Natural Earth does not include matching polygons for the Bering Strait or Strait of Hormuz. My Geo stores small repository-owned teaching outlines for those two objects, reviewed against Marine Regions geographic names and IHO reference material; no copyrighted reference geometry is copied.
+- Reviewed geometry supplements: Natural Earth does not include matching polygons for the Bering Strait or Strait of Hormuz. Scio Geo stores small repository-owned teaching outlines for those two objects, reviewed against Marine Regions geographic names and IHO reference material; no copyrighted reference geometry is copied.
 - References: NOAA Ocean Service education materials, the GEBCO Gazetteer of Undersea Feature Names, International Hydrographic Organization standards, and Marine Regions geographic names.
 - Accessed: 2026-08-14.
 - Use: reviewed Chinese and English names, broad locations, classifications, adjacent land descriptions, and educational summaries for 51 oceans, seas, bays, gulfs, straits, and trenches.
 
-My Geo stores repository-owned summaries and source-aligned, deliberately simplified teaching geometries. Surface polygons and trench lines show an approximate geographic extent only. They are not hydrographic limits and do not represent territorial seas, exclusive economic zones, jurisdiction, sovereignty, or any legal boundary. Public release still requires a separate map-compliance and content review.
+Scio Geo stores repository-owned summaries and source-aligned, deliberately simplified teaching geometries. Surface polygons and trench lines show an approximate geographic extent only. They are not hydrographic limits and do not represent territorial seas, exclusive economic zones, jurisdiction, sovereignty, or any legal boundary. Public release still requires a separate map-compliance and content review.
 
 ## Major rivers and artificial canals
 
@@ -161,7 +161,7 @@ Five catalog objects include explicitly recorded educational supplements because
 - Content references: Encyclopaedia Britannica mountain references, the U.S. Geological Survey, China's Ministry of Natural Resources, Geoscience Australia and Land Information New Zealand. Accessed 2026-08-14.
 - Use: Chinese and English names, broad locations, approximate lengths, highest-peak names, elevations, coordinates and original educational summaries.
 
-Natural Earth provides broad range polygons rather than crest lines. My Geo therefore treats those polygons as validation envelopes and derives repository-reviewed teaching ridges from ordered control points. The displayed line and peak marker are not a digital elevation model, complete mountain boundary, climbing route, hazard assessment, administrative border or sovereignty statement. Mountain and summit measurements can vary between surveys, so values marked as approximate should not be read as live surveying results.
+Natural Earth provides broad range polygons rather than crest lines. Scio Geo therefore treats those polygons as validation envelopes and derives repository-reviewed teaching ridges from ordered control points. The displayed line and peak marker are not a digital elevation model, complete mountain boundary, climbing route, hazard assessment, administrative border or sovereignty statement. Mountain and summit measurements can vary between surveys, so values marked as approximate should not be read as live surveying results.
 
 ## Flags
 
@@ -174,7 +174,7 @@ Natural Earth provides broad range polygons rather than crest lines. My Geo ther
   from source size and `viewBox` scale while preserving each native `viewBox`.
 
 The source project derives its SVGs from Wikimedia Commons and official flag
-construction references. My Geo pins the exact source revision, copies only the
+construction references. Scio Geo pins the exact source revision, copies only the
 195 catalogue flags during `bun run data:generate`, and validates that shipped
 SVGs contain a valid `viewBox` without scripts or external image references.
 

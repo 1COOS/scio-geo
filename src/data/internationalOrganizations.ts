@@ -313,7 +313,7 @@ const internationalAffiliationContent = [
       purpose:
         '加强非洲团结与合作，推动大陆一体化、和平安全、经济社会发展和非洲共同立场。',
       membership:
-        '官方共有55个成员；My Geo国家卡可映射54国，撒哈拉阿拉伯民主共和国作为其他正式成员列出。',
+        '官方共有55个成员；Scio Geo国家卡可映射54国，撒哈拉阿拉伯民主共和国作为其他正式成员列出。',
     },
     officialMemberCount: 55,
     memberCountryCodes: [
@@ -489,7 +489,7 @@ const internationalAffiliationContent = [
       purpose:
         '推动经济一体化、成员间协调、功能合作，并代表加勒比地区处理共同的国际议题。',
       membership:
-        '官方共有15个正式成员；My Geo国家卡可映射14国，蒙特塞拉特作为英国海外领地单独列出。联系成员不计入。',
+        '官方共有15个正式成员；Scio Geo国家卡可映射14国，蒙特塞拉特作为英国海外领地单独列出。联系成员不计入。',
     },
     officialMemberCount: 15,
     memberCountryCodes: [

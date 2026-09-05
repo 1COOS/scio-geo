@@ -11,7 +11,7 @@ void i18n.use(initReactI18next).init({
   resources: {
     'zh-CN': {
       translation: {
-        brand: 'My Geo',
+        brand: 'Scio Geo',
         eyebrow: '你的世界探索基地',
         title: '转动地球，发现每一片土地',
         titleLineOne: '转动地球，',
@@ -28,7 +28,7 @@ void i18n.use(initReactI18next).init({
         reducedMotion: '已遵循系统的减少动态效果设置',
         landscapeTitle: '请将设备横过来',
         landscapeDescription:
-          'My Geo 需要横屏空间来展示完整的地球和探索工具。旋转后会自动继续。',
+          'Scio Geo 需要横屏空间来展示完整的地球和探索工具。旋转后会自动继续。',
         landscapeHint: '如果画面没有旋转，请先关闭系统的屏幕方向锁定。',
       },
     },

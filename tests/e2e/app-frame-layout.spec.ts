@@ -117,7 +117,7 @@ for (const viewport of frameViewports) {
       await applySafeArea(page, safeInline, safeBottom)
 
       const navigation = page.getByRole('navigation', {
-        name: 'My Geo 主导航',
+        name: 'Scio Geo 主导航',
       })
       const study = page.locator('.knowledge-detail-study')
       const primaryContent = page.locator(detailPage.primaryContent).first()
@@ -206,7 +206,7 @@ for (const viewport of frameViewports) {
       }
     })
     const overviewNavigationBox = await page
-      .getByRole('navigation', { name: 'My Geo 主导航' })
+      .getByRole('navigation', { name: 'Scio Geo 主导航' })
       .boundingBox()
     expect(overviewNavigationBox).not.toBeNull()
     expect(shellPadding.top).toBeCloseTo(spacing, 0)
@@ -257,7 +257,7 @@ for (const viewport of frameViewports) {
     })
     await applySafeArea(page, safeInline, safeBottom)
     const exploreNavigation = page.getByRole('navigation', {
-      name: 'My Geo 主导航',
+      name: 'Scio Geo 主导航',
     })
     const exploreCard = page.getByLabel('中国国家知识卡')
     await expect(exploreCard).toBeVisible()

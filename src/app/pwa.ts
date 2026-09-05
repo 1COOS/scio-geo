@@ -1,12 +1,12 @@
 import { registerSW } from 'virtual:pwa-register'
 
-export function registerMyGeoServiceWorker() {
+export function registerScioGeoServiceWorker() {
   if (!import.meta.env.PROD) return
 
   registerSW({
     immediate: true,
     onRegisterError(error) {
-      console.error('My Geo service worker registration failed.', error)
+      console.error('Scio Geo service worker registration failed.', error)
     },
   })
 }

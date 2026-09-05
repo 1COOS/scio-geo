@@ -20,7 +20,7 @@ export const KOPPEN_ARCHIVE_MD5 = '7fc2f5a15d4f5fe0ce59c9a9b502aa09'
 export const KOPPEN_RASTER_PATH = '1991_2020/koppen_geiger_0p1.tif'
 
 const projectRoot = path.resolve(import.meta.dirname, '..')
-const archiveEnvironmentVariable = 'MY_GEO_KOPPEN_ARCHIVE'
+const archiveEnvironmentVariable = 'SCIO_GEO_KOPPEN_ARCHIVE'
 const publicDirectory = path.join(projectRoot, 'public/climate')
 const manifestPath = path.join(
   projectRoot,

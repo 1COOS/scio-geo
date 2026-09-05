@@ -49,8 +49,8 @@ const outputPath = path.join(
   projectRoot,
   'src/data/generated/waterbody-geometries.json',
 )
-const archiveOverrideEnvironmentVariable = 'MY_GEO_WATERBODY_ARCHIVE'
-const lakeArchiveOverrideEnvironmentVariable = 'MY_GEO_LAKE_ARCHIVE'
+const archiveOverrideEnvironmentVariable = 'SCIO_GEO_WATERBODY_ARCHIVE'
+const lakeArchiveOverrideEnvironmentVariable = 'SCIO_GEO_LAKE_ARCHIVE'
 
 function toRadians(value: number) {
   return (value * Math.PI) / 180

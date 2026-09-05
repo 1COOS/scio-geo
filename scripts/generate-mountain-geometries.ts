@@ -33,7 +33,7 @@ const outputPath = path.join(
   projectRoot,
   'src/data/generated/mountain-geometries.json',
 )
-const archiveOverrideEnvironmentVariable = 'MY_GEO_MOUNTAIN_ARCHIVE'
+const archiveOverrideEnvironmentVariable = 'SCIO_GEO_MOUNTAIN_ARCHIVE'
 const earthRadiusKilometers = 6371.0088
 
 function toRadians(value: number) {

@@ -244,7 +244,7 @@ test('keeps compact sources and exact 3D links on the new metric route', async (
   await detailCard.getByText('资料来源（2）').click()
   await expect(
     detailCard.getByRole('link', {
-      name: 'My Geo reviewed mountain and highest-peak catalogue',
+      name: 'Scio Geo reviewed mountain and highest-peak catalogue',
     }),
   ).toBeVisible()
   await expect(

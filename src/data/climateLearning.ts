@@ -13,7 +13,7 @@ const catalog = climateLearningCatalogSchema.parse({
     name: { zh: '世界气候类型', en: 'World Climate Types' },
     aliases: ['气候', '气候类型', '世界气候', '气候分布', '世界气候类型分布'],
     summary:
-      '气候类型综合反映一个地区长期的气温和降水特征。My Geo采用1991—2020年常年值，并按初中地理常用名称归并为13类。',
+      '气候类型综合反映一个地区长期的气温和降水特征。Scio Geo采用1991—2020年常年值，并按初中地理常用名称归并为13类。',
   },
   sources: [
     {

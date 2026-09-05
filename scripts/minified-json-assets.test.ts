@@ -6,7 +6,7 @@ import { getDevelopmentAssetUrl } from './minified-json-assets'
 
 describe('minified JSON assets', () => {
   it('serves project geometry files through a fetchable Vite development URL', () => {
-    const projectRoot = path.resolve('/workspace/my geo')
+    const projectRoot = path.resolve('/workspace/scio geo')
     const filename = path.join(
       projectRoot,
       'src/data/generated/country-boundaries.json',
@@ -19,7 +19,7 @@ describe('minified JSON assets', () => {
 
   it('uses the Vite filesystem route for assets outside the project root', () => {
     expect(
-      getDevelopmentAssetUrl('/shared/maps/world.json', '/workspace/my-geo'),
+      getDevelopmentAssetUrl('/shared/maps/world.json', '/workspace/scio-geo'),
     ).toBe('/@fs//shared/maps/world.json')
   })
 })

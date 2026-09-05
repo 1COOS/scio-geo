@@ -13,8 +13,8 @@ import {
   waterbodyGeometryDefinitions,
 } from './waterbody-geometry-content'
 
-const archivePath = process.env.MY_GEO_WATERBODY_ARCHIVE
-const lakeArchivePath = process.env.MY_GEO_LAKE_ARCHIVE
+const archivePath = process.env.SCIO_GEO_WATERBODY_ARCHIVE
+const lakeArchivePath = process.env.SCIO_GEO_LAKE_ARCHIVE
 
 describe('waterbody geometry source contract', () => {
   it('declares 65 sourced objects and two reviewed supplements', () => {

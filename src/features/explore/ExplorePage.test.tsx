@@ -485,10 +485,10 @@ describe('ExplorePage', () => {
       screen.queryByRole('combobox', { name: '搜索地点' }),
     ).not.toBeInTheDocument()
     expect(
-      screen.queryByRole('link', { name: 'My Geo 首页' }),
+      screen.queryByRole('link', { name: 'Scio Geo 首页' }),
     ).not.toBeInTheDocument()
     expect(
-      screen.queryByText('MY GEO · EARTH EXPLORATION LAB'),
+      screen.queryByText('SCIO GEO · EARTH EXPLORATION LAB'),
     ).not.toBeInTheDocument()
     expect(screen.getByTestId('world-mini-map')).toBeInTheDocument()
     expect(

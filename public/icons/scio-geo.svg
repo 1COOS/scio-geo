@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
-  <title id="title">My Geo</title>
+  <title id="title">Scio Geo</title>
   <desc id="desc">A bright blue globe with green land and an orbiting star.</desc>
   <defs>
     <radialGradient id="space" cx="35%" cy="25%" r="85%">

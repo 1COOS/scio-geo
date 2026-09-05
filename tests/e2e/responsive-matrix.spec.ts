@@ -47,7 +47,7 @@ for (const viewport of responsiveViewports) {
     await expectNoRootOverflow(page)
 
     const navigation = page.getByRole('navigation', {
-      name: 'My Geo 主导航',
+      name: 'Scio Geo 主导航',
     })
     await expect(navigation).toBeVisible()
     const navigationBox = await navigation.boundingBox()

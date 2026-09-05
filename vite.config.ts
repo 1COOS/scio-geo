@@ -11,14 +11,14 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: [
-        'icons/my-geo.svg',
-        'icons/my-geo-192.png',
-        'icons/my-geo-512.png',
+        'icons/scio-geo.svg',
+        'icons/scio-geo-192.png',
+        'icons/scio-geo-512.png',
         'icons/apple-touch-icon.png',
       ],
       manifest: {
-        name: 'My Geo · 探索我们的世界',
-        short_name: 'My Geo',
+        name: 'Scio Geo · 探索我们的世界',
+        short_name: 'Scio Geo',
         description: '面向青少年的互动式 3D 世界探索应用。',
         theme_color: '#071426',
         background_color: '#040b16',
@@ -31,17 +31,17 @@ export default defineConfig({
         categories: ['education', 'games'],
         icons: [
           {
-            src: '/icons/my-geo-192.png',
+            src: '/icons/scio-geo-192.png',
             sizes: '192x192',
             type: 'image/png',
           },
           {
-            src: '/icons/my-geo-512.png',
+            src: '/icons/scio-geo-512.png',
             sizes: '512x512',
             type: 'image/png',
           },
           {
-            src: '/icons/my-geo-512.png',
+            src: '/icons/scio-geo-512.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'maskable',

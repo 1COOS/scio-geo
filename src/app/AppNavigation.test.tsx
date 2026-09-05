@@ -105,14 +105,14 @@ afterEach(() => {
 
 describe('AppNavigation brand', () => {
   it.each(['/explore', '/knowledge', '/search'])(
-    'uses the My Geo logo on the primary %s page',
+    'uses the Scio Geo logo on the primary %s page',
     (path) => {
       installFullscreenHarness({ enabled: false })
       const { container } = renderNavigation(path)
       const brand = container.querySelector('.app-navigation-brand')
       const logo = brand?.querySelector('img')
 
-      expect(logo).toHaveAttribute('src', '/icons/my-geo-mark.svg')
+      expect(logo).toHaveAttribute('src', '/icons/scio-geo-mark.svg')
       expect(logo).toHaveAttribute('alt', '')
       expect(screen.queryByRole('button', { name: '返回上一级' })).toBeNull()
     },
@@ -270,24 +270,24 @@ describe('AppNavigation fullscreen logo', () => {
     renderNavigation()
 
     const enterFullscreen = screen.getByRole('button', {
-      name: 'My Geo，双击进入全屏',
+      name: 'Scio Geo，双击进入全屏',
     })
     await user.click(enterFullscreen)
     expect(fullscreen.requestFullscreen).not.toHaveBeenCalled()
     await user.dblClick(enterFullscreen)
     expect(fullscreen.requestFullscreen).toHaveBeenCalledTimes(1)
     expect(
-      screen.getByRole('button', { name: 'My Geo，双击退出全屏' }),
+      screen.getByRole('button', { name: 'Scio Geo，双击退出全屏' }),
     ).toHaveAttribute('aria-pressed', 'true')
 
     await user.click(screen.getByRole('link', { name: '图鉴' }))
     const exitFullscreen = screen.getByRole('button', {
-      name: 'My Geo，双击退出全屏',
+      name: 'Scio Geo，双击退出全屏',
     })
     await user.dblClick(exitFullscreen)
     expect(fullscreen.exitFullscreen).toHaveBeenCalledTimes(1)
     expect(
-      screen.getByRole('button', { name: 'My Geo，双击进入全屏' }),
+      screen.getByRole('button', { name: 'Scio Geo，双击进入全屏' }),
     ).toHaveAttribute('aria-pressed', 'false')
     expect(screen.queryByText('全屏')).toBeNull()
   })
@@ -296,7 +296,7 @@ describe('AppNavigation fullscreen logo', () => {
     const fullscreen = installFullscreenHarness()
     renderNavigation()
     const logo = screen.getByRole('button', {
-      name: 'My Geo，双击进入全屏',
+      name: 'Scio Geo，双击进入全屏',
     })
 
     fireEvent.pointerUp(logo, { pointerType: 'touch' })
@@ -312,7 +312,7 @@ describe('AppNavigation fullscreen logo', () => {
     const fullscreen = installFullscreenHarness()
     renderNavigation()
     const logo = screen.getByRole('button', {
-      name: 'My Geo，双击进入全屏',
+      name: 'Scio Geo，双击进入全屏',
     })
 
     logo.focus()
@@ -326,13 +326,13 @@ describe('AppNavigation fullscreen logo', () => {
     renderNavigation()
 
     await user.dblClick(
-      screen.getByRole('button', { name: 'My Geo，双击进入全屏' }),
+      screen.getByRole('button', { name: 'Scio Geo，双击进入全屏' }),
     )
     fullscreen.setFullscreenElement(null)
 
     await waitFor(() =>
       expect(
-        screen.getByRole('button', { name: 'My Geo，双击进入全屏' }),
+        screen.getByRole('button', { name: 'Scio Geo，双击进入全屏' }),
       ).toBeInTheDocument(),
     )
   })
@@ -343,12 +343,12 @@ describe('AppNavigation fullscreen logo', () => {
     renderNavigation()
 
     await user.dblClick(
-      screen.getByRole('button', { name: 'My Geo，双击进入全屏' }),
+      screen.getByRole('button', { name: 'Scio Geo，双击进入全屏' }),
     )
 
     expect(fullscreen.requestFullscreen).toHaveBeenCalledTimes(1)
     expect(
-      screen.getByRole('button', { name: 'My Geo，双击进入全屏' }),
+      screen.getByRole('button', { name: 'Scio Geo，双击进入全屏' }),
     ).toHaveAttribute('aria-pressed', 'false')
   })
 })

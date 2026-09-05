@@ -11,11 +11,11 @@ export function getDevelopmentAssetUrl(filename: string, projectRoot: string) {
 }
 
 export function minifiedJsonAssets(): Plugin {
-  const prefix = '\0my-geo-minified-json:'
+  const prefix = '\0scio-geo-minified-json:'
   let command: 'build' | 'serve' = 'build'
   let projectRoot = process.cwd()
   return {
-    name: 'my-geo-minified-json-assets',
+    name: 'scio-geo-minified-json-assets',
     enforce: 'pre',
     configResolved(config) {
       command = config.command

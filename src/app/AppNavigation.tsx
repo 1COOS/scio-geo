@@ -41,8 +41,8 @@ function FullscreenBrand() {
       setActive(isDocumentFullscreen()),
     )
   }
-  const label = active ? 'My Geo，双击退出全屏' : 'My Geo，双击进入全屏'
-  const logo = <img src="/icons/my-geo-mark.svg" alt="" draggable={false} />
+  const label = active ? 'Scio Geo，双击退出全屏' : 'Scio Geo，双击进入全屏'
+  const logo = <img src="/icons/scio-geo-mark.svg" alt="" draggable={false} />
 
   if (!available) {
     return (
@@ -140,7 +140,7 @@ export function AppNavigation() {
     <nav
       className="app-navigation"
       data-scene-overlay={sceneOverlayRoles.navigation}
-      aria-label="My Geo 主导航"
+      aria-label="Scio Geo 主导航"
     >
       <NavigationBrand />
       <NavLink

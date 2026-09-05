@@ -31,7 +31,7 @@ const outputPath = path.join(
   projectRoot,
   'src/data/generated/desert-geometries.json',
 )
-const archiveOverrideEnvironmentVariable = 'MY_GEO_DESERT_ARCHIVE'
+const archiveOverrideEnvironmentVariable = 'SCIO_GEO_DESERT_ARCHIVE'
 
 function toRadians(value: number) {
   return (value * Math.PI) / 180

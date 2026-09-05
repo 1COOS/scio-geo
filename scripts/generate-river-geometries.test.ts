@@ -5,7 +5,7 @@ import { describe, expect, it } from 'vitest'
 
 import { generateRiverGeometryCatalogFromArchive } from './generate-river-geometries'
 
-const archivePath = process.env.MY_GEO_RIVER_ARCHIVE
+const archivePath = process.env.SCIO_GEO_RIVER_ARCHIVE
 
 describe.skipIf(!archivePath)(
   'river geometry generator reproducibility',

@@ -4,10 +4,10 @@ import {
   type LandmarkCategory,
 } from './landmarkSchema'
 
-const unescoSources = ['unesco-world-heritage', 'my-geo-landmark-review']
+const unescoSources = ['unesco-world-heritage', 'scio-geo-landmark-review']
 const neuschwansteinSources = [
   'bavaria-neuschwanstein',
-  'my-geo-landmark-review',
+  'scio-geo-landmark-review',
 ]
 
 const landmark = (definition: Landmark) => definition

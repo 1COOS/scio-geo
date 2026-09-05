@@ -12,7 +12,7 @@ import {
   NATURAL_EARTH_DESERT_ARCHIVE_SHA256,
 } from './desert-geometry-content'
 
-const archivePath = process.env.MY_GEO_DESERT_ARCHIVE
+const archivePath = process.env.SCIO_GEO_DESERT_ARCHIVE
 
 describe('desert geometry source contract', () => {
   it('declares 20 unique reviewed Natural Earth records', () => {

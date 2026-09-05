@@ -894,7 +894,7 @@
           "kind": "landmark",
           "title": "悉尼歌剧院",
           "description": "悉尼歌剧院以帆形屋顶和海港位置闻名，是现代建筑与结构工程的重要作品。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         }
       ]
     },
@@ -2083,7 +2083,7 @@
           "kind": "landmark",
           "title": "救世基督像",
           "description": "救世基督像矗立在科尔科瓦多山顶，是里约热内卢山海城市景观中的重要标志。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         }
       ]
     },
@@ -3212,7 +3212,7 @@
           "kind": "landmark",
           "title": "拉帕努伊摩艾石像",
           "description": "摩艾石像由拉帕努伊人雕刻，多数曾立于称为“阿胡”的石台上。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         }
       ]
     },
@@ -3464,19 +3464,19 @@
           "kind": "landmark",
           "title": "长城",
           "description": "长城由不同时期的城墙、关隘和烽火台组成，是跨越中国北方的大型防御体系。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         },
         {
           "kind": "landmark",
           "title": "故宫",
           "description": "故宫曾是明清两代皇宫，以中轴线布局和大规模木构建筑群闻名。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         },
         {
           "kind": "landmark",
           "title": "秦始皇陵兵马俑",
           "description": "兵马俑是秦始皇陵大型陵墓体系的一部分，以成阵列排列的陶制军队著称。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         }
       ]
     },
@@ -4106,7 +4106,7 @@
           "kind": "landmark",
           "title": "新天鹅堡",
           "description": "新天鹅堡由巴伐利亚国王路德维希二世主持修建，以浪漫主义中世纪想象著称。",
-          "sourceIds": ["bavaria-neuschwanstein", "my-geo-landmark-review"]
+          "sourceIds": ["bavaria-neuschwanstein", "scio-geo-landmark-review"]
         }
       ]
     },
@@ -4822,13 +4822,13 @@
           "kind": "landmark",
           "title": "吉萨金字塔",
           "description": "吉萨金字塔群由大型王陵、神庙、墓地和狮身人面像等遗迹共同组成。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         },
         {
           "kind": "landmark",
           "title": "阿布辛贝神庙",
           "description": "阿布辛贝神庙由拉美西斯二世时期在岩壁中开凿，入口巨像形成强烈纪念性。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         }
       ]
     },
@@ -5031,7 +5031,7 @@
           "kind": "landmark",
           "title": "阿尔罕布拉宫",
           "description": "阿尔罕布拉宫融合宫殿、城堡和花园空间，以精细装饰、水景和庭院布局著称。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         }
       ]
     },
@@ -5132,7 +5132,7 @@
           "kind": "landmark",
           "title": "拉利贝拉岩石教堂",
           "description": "拉利贝拉的教堂由整块岩体向下开凿形成，并通过沟渠、通道和庭院相连。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         }
       ]
     },
@@ -5406,7 +5406,7 @@
           "kind": "landmark",
           "title": "南马都尔遗址",
           "description": "南马都尔由人工小岛、潮汐水道和玄武岩建筑构成，曾是绍德雷尔王朝的仪式中心。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         }
       ]
     },
@@ -5513,7 +5513,7 @@
           "kind": "landmark",
           "title": "圣米歇尔山",
           "description": "圣米歇尔山的修道院和聚落建在潮汐海湾中的岩岛上，建筑随地势层层上升。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         }
       ]
     },
@@ -5709,7 +5709,7 @@
           "kind": "landmark",
           "title": "巨石阵",
           "description": "巨石阵是史前时期逐步形成的巨石纪念建筑，与周围土丘和仪式景观共同构成遗址群。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         }
       ]
     },
@@ -6304,7 +6304,7 @@
           "kind": "landmark",
           "title": "雅典卫城",
           "description": "雅典卫城位于城市高地，帕特农神庙等建筑代表了古典希腊的重要建筑成就。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         }
       ]
     },
@@ -7009,7 +7009,7 @@
           "kind": "landmark",
           "title": "婆罗浮屠",
           "description": "婆罗浮屠是一座阶梯式佛教纪念建筑，参观路线沿浮雕回廊逐层上升。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         }
       ]
     },
@@ -7311,7 +7311,7 @@
           "kind": "landmark",
           "title": "泰姬陵",
           "description": "泰姬陵是莫卧儿帝国时期的陵墓建筑群，以白色大理石主体和对称花园布局著称。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         }
       ]
     },
@@ -7506,7 +7506,7 @@
           "kind": "landmark",
           "title": "波斯波利斯",
           "description": "波斯波利斯是阿契美尼德帝国的重要礼仪中心，遗址坐落在大型人工平台上。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         }
       ]
     },
@@ -7690,7 +7690,7 @@
           "kind": "landmark",
           "title": "罗马斗兽场",
           "description": "罗马斗兽场是古罗马大型圆形竞技场，以分层看台、拱券结构和复杂地下空间闻名。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         }
       ]
     },
@@ -7872,7 +7872,7 @@
           "kind": "landmark",
           "title": "佩特拉古城",
           "description": "佩特拉曾是纳巴泰人的重要城市，以雕凿在砂岩峭壁中的建筑和水利系统闻名。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         }
       ]
     },
@@ -7973,7 +7973,7 @@
           "kind": "landmark",
           "title": "姬路城",
           "description": "姬路城保存了复杂的日本城郭防御体系，白色外墙使它拥有“白鹭城”的别称。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         }
       ]
     },
@@ -8264,7 +8264,7 @@
           "kind": "landmark",
           "title": "吴哥窟",
           "description": "吴哥窟是高棉帝国时期的大型寺庙建筑，以塔群、回廊和连续浮雕闻名。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         }
       ]
     },
@@ -10576,7 +10576,7 @@
           "kind": "landmark",
           "title": "蒲甘古城",
           "description": "蒲甘平原分布着大量佛塔和寺庙遗迹，见证了蒲甘王国的宗教与建筑发展。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         }
       ]
     },
@@ -11176,13 +11176,13 @@
           "kind": "landmark",
           "title": "奇琴伊察",
           "description": "奇琴伊察是玛雅文明的重要城市遗址，融合了金字塔、球场、神庙和天文观测建筑。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         },
         {
           "kind": "landmark",
           "title": "特奥蒂瓦坎",
           "description": "特奥蒂瓦坎曾是美洲古代大型城市，以太阳金字塔、月亮金字塔和城市轴线闻名。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         }
       ]
     },
@@ -12420,7 +12420,7 @@
           "kind": "landmark",
           "title": "马丘比丘",
           "description": "马丘比丘是印加时期山地遗址，石砌建筑、梯田和道路顺应陡峭地形布局。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         }
       ]
     },
@@ -15731,7 +15731,7 @@
           "kind": "landmark",
           "title": "迦太基遗址",
           "description": "迦太基遗址保存了腓尼基—布匿文明和罗马城市的多层历史遗迹。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         }
       ]
     },
@@ -15926,7 +15926,7 @@
           "kind": "landmark",
           "title": "圣索菲亚大教堂",
           "description": "圣索菲亚大教堂以巨大中央穹顶闻名，长期历史中曾承担不同宗教和公共功能。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         }
       ]
     },
@@ -16495,7 +16495,7 @@
           "kind": "landmark",
           "title": "自由女神像",
           "description": "自由女神像是法国赠予美国的纪念建筑，以高举火炬的铜像象征自由与交流。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         }
       ]
     },
@@ -17648,7 +17648,7 @@
           "kind": "landmark",
           "title": "大津巴布韦遗址",
           "description": "大津巴布韦曾是南部非洲重要政治和贸易中心，以不使用砂浆的石砌围墙著称。",
-          "sourceIds": ["unesco-world-heritage", "my-geo-landmark-review"]
+          "sourceIds": ["unesco-world-heritage", "scio-geo-landmark-review"]
         }
       ]
     },

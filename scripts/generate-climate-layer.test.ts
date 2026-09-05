@@ -16,7 +16,7 @@ import {
   renderClimateRaster,
 } from './generate-climate-layer'
 
-const archivePath = process.env.MY_GEO_KOPPEN_ARCHIVE
+const archivePath = process.env.SCIO_GEO_KOPPEN_ARCHIVE
 
 function getPixel(rgba: Uint8Array, width: number, x: number, y: number) {
   const offset = (y * width + x) * 4

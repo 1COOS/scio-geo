@@ -13,7 +13,7 @@ export const FEATURED_COUNTRY_CODES = [
   'AU',
 ] as const
 
-// Natural Earth publishes Taiwan island as numeric feature 158. My Geo keeps
+// Natural Earth publishes Taiwan island as numeric feature 158. Scio Geo keeps
 // the 195-country catalogue unchanged and incorporates that island geometry
 // into China's numeric feature 156 for rendering and hit testing.
 export const countryBoundaryGeometrySupplements: Record<string, string[]> = {

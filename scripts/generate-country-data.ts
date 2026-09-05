@@ -507,7 +507,7 @@ const cities: City[] = countries.flatMap((country) => {
       isCapital: false,
       order: capitalCities.length + index + 1,
       reasons: selection.reasons,
-      sourceIds: ['world-cities', 'my-geo-city-review'],
+      sourceIds: ['world-cities', 'scio-geo-city-review'],
     }
   })
 

@@ -1,8 +1,8 @@
-# my-geo repository guidance
+# scio-geo repository guidance
 
 ## Product and architecture
 
-- My Geo is a local-first Web/PWA for teenagers to explore countries, capitals, flags, and geography through an interactive 3D globe.
+- Scio Geo is a local-first Web/PWA for teenagers to explore countries, capitals, flags, and geography through an interactive 3D globe.
 - Keep the core experience usable without an account, backend, or network connection after installation.
 - Keep educational content in repository-owned structured data. Validate content with Zod at load or build time; do not silently accept malformed country or quiz data.
 - Keep boundaries clear between `src/scene` (Three/R3F rendering), `src/features` (product and game behavior), `src/data` (reviewed educational content), `src/storage` (local persistence), and `src/shared` (reusable UI/utilities).

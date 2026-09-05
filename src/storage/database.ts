@@ -52,12 +52,12 @@ export function clearLegacyQuestionProgress(
   return transaction.table('questionProgress').clear()
 }
 
-class MyGeoDatabase extends Dexie {
+class ScioGeoDatabase extends Dexie {
   preferences!: EntityTable<ExperiencePreferences, 'id'>
   questionProgress!: EntityTable<QuestionChallengeProgress, 'challengeId'>
 
   constructor() {
-    super('my-geo')
+    super('scio-geo')
     this.version(1).stores({
       preferences: 'id, updatedAt',
     })
@@ -79,11 +79,11 @@ class MyGeoDatabase extends Dexie {
   }
 }
 
-let database: MyGeoDatabase | undefined
+let database: ScioGeoDatabase | undefined
 
 function getDatabase() {
   if (typeof indexedDB === 'undefined') return undefined
-  database ??= new MyGeoDatabase()
+  database ??= new ScioGeoDatabase()
   return database
 }
 

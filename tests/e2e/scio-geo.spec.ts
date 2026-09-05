@@ -24,7 +24,7 @@ async function forceChoiceQuestionSequence(page: Page) {
 
 async function openCountrySearch(page: Page) {
   const trigger = page
-    .getByRole('navigation', { name: 'My Geo 主导航' })
+    .getByRole('navigation', { name: 'Scio Geo 主导航' })
     .getByRole('link', { name: '搜索', exact: true })
   await trigger.click()
   await expect(page).toHaveURL(/\/search$/)
@@ -272,14 +272,16 @@ async function readMapHighlightStyle(page: Page, selector: string) {
   })
 }
 
-test('loads the responsive My Geo exploration shell', async ({ page }) => {
+test('loads the responsive Scio Geo exploration shell', async ({ page }) => {
   await page.goto('/')
 
   await expect(
     page.getByRole('heading', { name: '转动地球，发现每一片土地' }),
   ).toHaveCount(0)
-  await expect(page.getByRole('link', { name: 'My Geo 首页' })).toHaveCount(0)
-  await expect(page.getByText('MY GEO · EARTH EXPLORATION LAB')).toHaveCount(0)
+  await expect(page.getByRole('link', { name: 'Scio Geo 首页' })).toHaveCount(0)
+  await expect(page.getByText('SCIO GEO · EARTH EXPLORATION LAB')).toHaveCount(
+    0,
+  )
   await expect(page.getByRole('link', { name: '搜索' })).toBeVisible()
   await expect(page.getByRole('combobox', { name: '搜索地点' })).toHaveCount(0)
 
@@ -1621,16 +1623,16 @@ for (const viewport of [
 test('deletes legacy regional progress and redirects legacy challenge routes', async ({
   page,
 }) => {
-  await page.goto('/icons/my-geo-mark.svg')
+  await page.goto('/icons/scio-geo-mark.svg')
   await page.evaluate(async () => {
     await new Promise<void>((resolve, reject) => {
-      const deletion = indexedDB.deleteDatabase('my-geo')
+      const deletion = indexedDB.deleteDatabase('scio-geo')
       deletion.onsuccess = () => resolve()
       deletion.onerror = () =>
         reject(new Error(deletion.error?.message ?? 'Database deletion failed'))
     })
     await new Promise<void>((resolve, reject) => {
-      const request = indexedDB.open('my-geo', 2)
+      const request = indexedDB.open('scio-geo', 2)
       request.onupgradeneeded = () => {
         const database = request.result
         database.createObjectStore('preferences', { keyPath: 'id' })
@@ -1671,7 +1673,7 @@ test('deletes legacy regional progress and redirects legacy challenge routes', a
   const stores = await page.evaluate(
     () =>
       new Promise<string[]>((resolve, reject) => {
-        const request = indexedDB.open('my-geo')
+        const request = indexedDB.open('scio-geo')
         request.onsuccess = () => {
           const database = request.result
           resolve(Array.from(database.objectStoreNames))
@@ -1693,16 +1695,16 @@ test('deletes legacy regional progress and redirects legacy challenge routes', a
 test('clears version 3 question progress while preserving preferences', async ({
   page,
 }) => {
-  await page.goto('/icons/my-geo-mark.svg')
+  await page.goto('/icons/scio-geo-mark.svg')
   await page.evaluate(async () => {
     await new Promise<void>((resolve, reject) => {
-      const deletion = indexedDB.deleteDatabase('my-geo')
+      const deletion = indexedDB.deleteDatabase('scio-geo')
       deletion.onsuccess = () => resolve()
       deletion.onerror = () =>
         reject(new Error(deletion.error?.message ?? 'Database deletion failed'))
     })
     await new Promise<void>((resolve, reject) => {
-      const request = indexedDB.open('my-geo', 3)
+      const request = indexedDB.open('scio-geo', 3)
       request.onupgradeneeded = () => {
         const database = request.result
         database.createObjectStore('preferences', { keyPath: 'id' })
@@ -1750,7 +1752,7 @@ test('clears version 3 question progress while preserving preferences', async ({
     () =>
       new Promise<{ progressCount: number; autoRotate?: boolean }>(
         (resolve, reject) => {
-          const request = indexedDB.open('my-geo')
+          const request = indexedDB.open('scio-geo')
           request.onsuccess = () => {
             const database = request.result
             const transaction = database.transaction(
@@ -2376,7 +2378,7 @@ for (const viewport of [
     await expect(page.locator('.knowledge-region-page-header')).toHaveCount(0)
     await expect(page.getByRole('link', { name: '← 返回亚洲' })).toHaveCount(0)
     const navigation = page.getByRole('navigation', {
-      name: 'My Geo 主导航',
+      name: 'Scio Geo 主导航',
     })
     const displayTrigger = page.getByRole('button', {
       name: '显示国家卡内容',
@@ -2706,7 +2708,7 @@ for (const viewport of [
     await page.goto('/knowledge/countries/southeast-asia')
 
     const navigation = page.getByRole('navigation', {
-      name: 'My Geo 主导航',
+      name: 'Scio Geo 主导航',
     })
     const trigger = page.getByRole('button', {
       name: '显示国家卡内容',
@@ -2778,7 +2780,7 @@ test('exposes a valid PWA manifest', async ({ request }) => {
     icons: Array<{ src: string }>
   }
 
-  expect(manifest.name).toContain('My Geo')
+  expect(manifest.name).toContain('Scio Geo')
   expect(manifest.display).toBe('standalone')
   expect(manifest.display_override).toEqual(['fullscreen', 'standalone'])
   expect(manifest.orientation).toBe('landscape')
@@ -2792,13 +2794,13 @@ test('toggles fullscreen from the primary-page logo and preserves state on desce
   await page.goto('/explore')
 
   const enterFullscreen = page.getByRole('button', {
-    name: 'My Geo，双击进入全屏',
+    name: 'Scio Geo，双击进入全屏',
   })
   await enterFullscreen.click()
   expect(await page.evaluate(() => document.fullscreenElement)).toBeNull()
   await enterFullscreen.dblclick()
   await expect(
-    page.getByRole('button', { name: 'My Geo，双击退出全屏' }),
+    page.getByRole('button', { name: 'Scio Geo，双击退出全屏' }),
   ).toHaveAttribute('aria-pressed', 'true')
 
   await page.getByRole('link', { name: '图鉴' }).click()
@@ -2808,7 +2810,7 @@ test('toggles fullscreen from the primary-page logo and preserves state on desce
   await page.getByTestId('knowledge-region-east-asia').click()
   await expect(page).toHaveURL(/\/knowledge\/countries\/east-asia$/)
   await expect(
-    page.getByRole('button', { name: 'My Geo，双击退出全屏' }),
+    page.getByRole('button', { name: 'Scio Geo，双击退出全屏' }),
   ).toHaveCount(0)
   expect(await page.evaluate(() => document.fullscreenElement !== null)).toBe(
     true,
@@ -2819,14 +2821,14 @@ test('toggles fullscreen from the primary-page logo and preserves state on desce
   await page.getByRole('button', { name: '返回上一级' }).click()
   await expect(page).toHaveURL(/\/knowledge$/)
   const exitFullscreen = page.getByRole('button', {
-    name: 'My Geo，双击退出全屏',
+    name: 'Scio Geo，双击退出全屏',
   })
   await page.evaluate(() => document.exitFullscreen())
   await expect(
-    page.getByRole('button', { name: 'My Geo，双击进入全屏' }),
+    page.getByRole('button', { name: 'Scio Geo，双击进入全屏' }),
   ).toHaveAttribute('aria-pressed', 'false')
 
-  await page.getByRole('button', { name: 'My Geo，双击进入全屏' }).dblclick()
+  await page.getByRole('button', { name: 'Scio Geo，双击进入全屏' }).dblclick()
   await expect(exitFullscreen).toBeVisible()
 })
 
@@ -2858,10 +2860,10 @@ for (const viewport of [
     await page.goto('/explore')
 
     const navigation = page.getByRole('navigation', {
-      name: 'My Geo 主导航',
+      name: 'Scio Geo 主导航',
     })
     const logo = page.getByRole('button', {
-      name: 'My Geo，双击进入全屏',
+      name: 'Scio Geo，双击进入全屏',
     })
     await expect(logo).toBeVisible()
     await expect(page.getByText('全屏', { exact: true })).toHaveCount(0)
@@ -2930,7 +2932,7 @@ test('asks touch phones and iPads to rotate before loading the app', async ({
     await expect(page.getByTestId('globe-scene')).toHaveCount(0)
     await expect(page.getByTestId('webgl-fallback')).toHaveCount(0)
     await expect(
-      page.getByRole('button', { name: /My Geo，双击.*全屏/ }),
+      page.getByRole('button', { name: /Scio Geo，双击.*全屏/ }),
     ).toHaveCount(0)
   }
 })

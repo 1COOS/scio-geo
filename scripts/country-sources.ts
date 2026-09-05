@@ -13,11 +13,11 @@ export const countrySources: CountrySource[] = [
     license: 'Creative Commons Attribution 4.0 International (CC BY 4.0)',
   },
   {
-    id: 'my-geo-city-review',
-    name: 'My Geo reviewed city selection',
-    publisher: 'My Geo project',
+    id: 'scio-geo-city-review',
+    name: 'Scio Geo reviewed city selection',
+    publisher: 'Scio Geo project',
     version: '2026-08-13',
-    url: 'https://github.com/1COOS/my-geo/blob/main/scripts/city-content.ts',
+    url: 'https://github.com/1COOS/scio-geo/blob/main/scripts/city-content.ts',
     license: 'Repository-owned reviewed educational metadata',
   },
   {
@@ -60,7 +60,8 @@ export const countrySources: CountrySource[] = [
       'Natural Earth 5.1.0 1:10m; SHA-256 a2d3395904c41e718e02c3ec5bc988712164c524c236fad32d95d282ca303b2a',
     accessedAt: '2026-08-14',
     url: 'https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-physical-labels/',
-    license: 'Public domain marine polygons; selected and simplified by My Geo',
+    license:
+      'Public domain marine polygons; selected and simplified by Scio Geo',
   },
   {
     id: 'britannica-ocean',
@@ -78,7 +79,7 @@ export const countrySources: CountrySource[] = [
       'Natural Earth 5.0.0 1:10m; SHA-256 0803a06f9c3cb4671d89b68c48b142aad9366ba40f665245e12a913fbc61722a',
     accessedAt: '2026-08-17',
     url: 'https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-lakes/',
-    license: 'Public domain lake polygons; selected and simplified by My Geo',
+    license: 'Public domain lake polygons; selected and simplified by Scio Geo',
   },
   {
     id: 'britannica-lake',
@@ -97,7 +98,7 @@ export const countrySources: CountrySource[] = [
     accessedAt: '2026-08-13',
     url: 'https://naturalearthdata.com/downloads/10m-physical-vectors/10m-rivers-lake-centerlines/',
     license:
-      'Public domain vector data; main stems selected and simplified by My Geo',
+      'Public domain vector data; main stems selected and simplified by Scio Geo',
   },
   {
     id: 'natural-earth-mountains',
@@ -108,7 +109,7 @@ export const countrySources: CountrySource[] = [
     accessedAt: '2026-08-14',
     url: 'https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-physical-labels/',
     license:
-      'Public domain range envelopes; My Geo derives reviewed educational ridge lines',
+      'Public domain range envelopes; Scio Geo derives reviewed educational ridge lines',
   },
   {
     id: 'natural-earth-deserts',
@@ -119,7 +120,7 @@ export const countrySources: CountrySource[] = [
     accessedAt: '2026-08-16',
     url: 'https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-physical-labels/',
     license:
-      'Public domain desert-region polygons; selected and simplified by My Geo',
+      'Public domain desert-region polygons; selected and simplified by Scio Geo',
   },
   {
     id: 'britannica-deserts',
@@ -146,11 +147,11 @@ export const countrySources: CountrySource[] = [
     license: 'Official reference material; linked, not copied',
   },
   {
-    id: 'my-geo-landmark-review',
-    name: 'My Geo reviewed world landmark catalogue',
-    publisher: 'My Geo project',
+    id: 'scio-geo-landmark-review',
+    name: 'Scio Geo reviewed world landmark catalogue',
+    publisher: 'Scio Geo project',
     version: '2026-08-17',
-    url: 'https://github.com/1COOS/my-geo/blob/main/src/data/landmarks.ts',
+    url: 'https://github.com/1COOS/scio-geo/blob/main/src/data/landmarks.ts',
     license: 'Repository-owned reviewed educational metadata',
   },
   {
@@ -163,17 +164,17 @@ export const countrySources: CountrySource[] = [
   },
   {
     id: 'mountain-peak-review',
-    name: 'My Geo reviewed mountain and highest-peak catalogue',
-    publisher: 'My Geo project',
+    name: 'Scio Geo reviewed mountain and highest-peak catalogue',
+    publisher: 'Scio Geo project',
     version: '2026-08-14',
-    url: 'https://github.com/1COOS/my-geo/blob/main/src/data/mountainRanges.ts',
+    url: 'https://github.com/1COOS/scio-geo/blob/main/src/data/mountainRanges.ts',
     license:
       'Repository-owned educational summaries reviewed against linked geographic references',
   },
   {
     id: 'china-mountain-review',
     name: 'China mountain and peak reference review',
-    publisher: 'My Geo review of public Chinese geographic references',
+    publisher: 'Scio Geo review of public Chinese geographic references',
     accessedAt: '2026-08-14',
     url: 'https://www.mnr.gov.cn/english/',
     license: 'Official reference material; linked, not copied',
@@ -205,7 +206,7 @@ export const countrySources: CountrySource[] = [
   {
     id: 'china-river-source-review',
     name: 'China major-river source reach review',
-    publisher: 'My Geo review of public Ministry of Water Resources material',
+    publisher: 'Scio Geo review of public Ministry of Water Resources material',
     accessedAt: '2026-08-13',
     url: 'http://www.mwr.gov.cn/english/',
     license:
@@ -214,7 +215,7 @@ export const countrySources: CountrySource[] = [
   {
     id: 'mekong-source-review',
     name: 'Mekong and Lancang source reach review',
-    publisher: 'Mekong River Commission and My Geo review',
+    publisher: 'Mekong River Commission and Scio Geo review',
     accessedAt: '2026-08-13',
     url: 'https://www.mrcmekong.org/',
     license:
